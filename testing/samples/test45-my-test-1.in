@@ -1,0 +1,21 @@
+# Tests adding, committing, modifying, and checking out helloworld.txt and goodbyeworld.txt.
+> init
+<<<
++ helloworld.txt helloworld.txt
+> add helloworld.txt
+<<<
+> commit "added helloworld"
+<<<
++ goodbyeworld.txt goodbyeworld.txt
+> add goodbyeworld.txt
+<<<
+> commit "added goodbyeworld"
+<<<
++ goodbyeworld.txt helloworld.txt
+> add goodbyeworld.txt
+<<<
+> commit "changed goodbyeworld to contents of helloworld"
+<<<
+> checkout -- goodbyeworld.txt
+<<<
+= goodbyeworld.txt helloworld.txt

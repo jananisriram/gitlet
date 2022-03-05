@@ -1,0 +1,27 @@
+# Removes a tracked file nineteen.txt and checks status of program.
+I prelude1.inc
++ december.txt helloworld.txt
++ nineteen.txt goodbyeworld.txt
+> add december.txt
+<<<
+> add nineteen.txt
+<<<
+> commit "two files: december.txt and nineteen.txt"
+<<<
+> rm nineteen.txt
+<<<
+* nineteen.txt
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+nineteen.txt
+
+<<<
